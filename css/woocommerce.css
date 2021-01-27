@@ -1,0 +1,261 @@
+/* Geral */
+.woocommerce a {
+    text-decoration: underline;
+}
+
+/* Notification  */
+.woocommerce-message,
+.woocommerce-info,
+.woocoomerce-error {
+    background: #eeeeee;
+    border:none;
+    color: #000000;
+    padding: 15px 20px;
+}
+
+.woocommerce-message::before,
+.woocommerce-info::before,
+.woocoomerce-error::before {
+    display: none;
+}
+
+.woocoomerce-error {
+    border-left: 4px solid crimson;
+}
+
+.woocommerce-message,
+.woocommerce-info {
+    border-left: 4px solid olivedrab;
+}
+
+
+/* Form */
+.woocommerce .input-text {
+    font-size: 1.125rem !important;
+    border: 1px solid rgba(0, 0, 0, .08) !important;
+    background: rgba(0, 0, 0, .08) !important;
+    padding: 10px 15px !important;
+    border-radius: 4px !important;
+}
+
+.woocommerce form .form-row {
+    padding: 3px 0;
+}
+
+.woocommerce button.button {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
+    text-transform: capitalize;
+    min-height: 43px;
+}
+
+/* Carrinho  */
+
+.woocommerce-cart #coupon_code {
+    min-width: 180px;
+    margin-right: 10px;
+}
+
+.woocommerce-cart a.button.alt {
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color:#1F75FF;
+    transition: 0.5s;
+}
+
+.woocommerce-cart a.button.alt:hover {
+    background-color:#2283EB;
+}
+
+.woocommerce-cart .cart_totals h2 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.woocommerce table.shop_table {
+    border-radius:0px ;
+}
+
+/* Checkout */
+
+.woocommerce-form-coupon-toggle {
+    display: none;
+}
+
+.woocommerce .checkout h3 {
+    font-size: 1rem;
+    padding: 15px;
+    background: #111;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.woocommerce #ship-to-different-address {
+    float: none !important;
+}
+
+@media(max-width:800px) {
+    .woocommerce #ship-to-different-address {
+        margin-top: 30px;
+    }
+
+}
+
+.woocommerce #order_review_heading {
+    margin-top: 30px;
+}
+
+.woocommerce #payment,
+.woocommerce #payment div.payment_box {
+    background-color: rgba(0, 0, 0, .08);
+    font-size: 1rem;
+    color: #000;
+}
+
+.woocommerce #payment #place_order {
+    float: none;
+    margin-top:20px ;
+    font-size: 1.25rem;
+    padding: 15px 33px;
+    background-color:#1F75FF !important;
+    transition: 0.5s;
+    outline: none;
+}
+
+.woocommerce #payment #place_order:hover {
+    background-color: #2283EB !important;
+}
+
+.woocommerce form.login {
+    border: none;
+    padding: 0px;
+    margin: 10px 0;
+    max-width: 600px;
+}
+
+/* Minha Conta  */
+.woocommerce-account h2 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+
+}
+
+.woocommerce-account.logged-in .woocommerce {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 30px;
+}
+
+@media(max-width:800px) {
+    .woocommerce-account.logged-in .woocommerce {
+        grid-template-columns:1fr;
+    }
+}
+
+.woocommerce-account.logged-in .woocommerce::before,
+.woocommerce-account.logged-in .woocommerce::after {
+    display: none;
+}
+
+.woocommerce-account.logged-in .woocommerce-MyAccount-navigation,
+.woocommerce-account.logged-in .woocommerce-MyAccount-content {
+    width: auto;
+    float: none;
+}
+
+/* Side Menu  */
+.woocommerce-MyAccount-navigation ul {
+    background-color: #111;
+}
+
+.woocommerce-MyAccount-navigation a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
+}
+
+.woocommerce-MyAccount-navigation a:hover,
+.woocommerce-MyAccount-navigation .is-active a {
+    background-color: #ff0000;
+}
+
+.woocommerce-MyAccount-content p {
+    margin-bottom: 1rem;
+}
+
+.woocommerce-MyAccount-content button {
+    margin-top: 15px !important;
+}
+
+.woocommerce .woocommerce-customer-details address {
+    border-width: 1px;
+    border-radius: 0px;
+}
+
+/* Pedido recebido  */
+
+.woocommerce-order-received h2 {
+    font-size: 1.25rem;
+    margin: 10px 0 ;
+}
+
+.woocommerce-order-received 
+.woocommerce-thankyou-order-received {
+    color: #fff;
+    background: #ff0000;
+    padding: 15px;
+    border-radius:4px ;
+    margin-bottom: 30px;
+}
+
+.woocommerce-order-received ul.order_details {
+    background-color: #eeeeee;
+    padding: 15px;
+    margin-bottom: 30px;
+
+}
+
+.woocommerce-order-received ul.order_details li {
+    margin: 10px ;
+}
+
+.woocommerce-order-received ul.order_details li strong {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.woocommerce-order-received ul.order_details + p {
+    margin-bottom: 30px;
+}
+
+.woocommerce-page .woocommerce-message .button {
+    font-weight: normal;
+    color: #fff;
+    background: #ff0000;
+}
+
+.woocommerce-page .woocommerce-message .button:hover {
+    color: #fff;
+    background: #ff5b5b;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MercadoPago  */
+
+

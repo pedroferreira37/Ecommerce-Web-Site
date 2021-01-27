@@ -1,0 +1,130 @@
+/* vantagens */
+.vantagens {
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.vantagens li {
+    margin: 0 20px;
+    padding: 5px 0 5px 35px;
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+.vantagens li:nth-child(1) {
+    background-image: url("../img/icons/troca.svg");
+}
+
+.vantagens li:nth-child(2) {
+    background-image: url("../img/icons/frete.svg");
+}
+
+
+/* slide */
+
+
+.slide-wrapper {
+    padding-top: 60px;
+    
+}
+.slide-item {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    background: black;
+    
+}
+
+.slide-info {
+    padding: 0 20px 40px 20px;
+    color: white;
+    align-self: end;
+}
+
+@media (max-width:800px) {
+    .slide-item {
+        grid-template-columns: 1fr;
+    }
+    .slide-info {
+        margin-top: 20px;
+    }
+}
+.slide-preco {
+    display: block;
+    margin-bottom: 5px;
+    color: rgba(255, 255 ,255 ,.5);
+    font-weight: 300;
+}
+
+.slide-nome {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+.btn-link {
+    padding: 15px;
+    background: white;
+    max-width: 200px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.btn-link:hover {
+    background:#808080;
+    transition: 0.5s;
+    
+
+}
+
+.btn-link::after {
+    content:'';
+    display:block;
+    background: url('../img/icons/arrow.svg')no-repeat center center;
+    width: 18px;
+    height: 18px;
+}
+
+.categorias-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.categorias-home a {
+    display: grid;
+}
+
+.categorias-home a:nth-child(1) {
+    border-top: 10px solid #000000;
+    border-bottom: 10px solid #000000;
+}
+
+
+.categorias-home a:nth-child(2) {
+    border-top: 10px solid #000000;
+    border-bottom: 10px solid #000000;
+}
+
+.categorias-home img {
+    grid-area: 1/1;
+}
+
+
+.categorias-home span {
+    grid-area: 1/1;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 40px;
+}
+
+
+

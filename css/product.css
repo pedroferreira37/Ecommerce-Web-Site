@@ -1,0 +1,167 @@
+.product {
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+    grid-gap: 30px;
+}
+
+@media(max-width: 800px) {
+    .product {
+        grid-template-columns: 1fr;
+    }
+    .product-gallery {
+        grid-row: 2;
+    }
+}
+
+.product-gallery {
+    display: grid;
+    grid-template-columns:   50px 1fr;
+    grid-gap: 20px;
+    
+}
+
+@media(max-width: 800px) {
+    .product-gallery  {
+        grid-template-columns: 1fr ;
+    }
+    .product-gallery-list {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-gap: 10px;
+    }
+   
+}
+
+
+.product-gallery-list img {
+    margin-bottom: 20px;
+}
+.product-detail {
+    margin: 0 auto;
+}
+
+@media(max-width: 800px) {
+    .product-detail  {
+        margin:0 ;
+    }
+}
+
+.product-detail h1 {
+    font-size: 1.5rem;
+    font-weight :400;
+    margin: 20px 0 ;
+}
+
+.product-detail h2 {
+    font-size: 1.5rem;
+    font-weight :400;
+    margin-bottom:10px ;
+}
+
+.product-detail .product-price {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.product-detail .button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1F75FE;
+    color: #ffffff;
+    padding: 12px 15px;
+    min-width: 200px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    
+}
+
+.product-detail .button::after {
+    content: '';
+    display: block;
+    background: url('../img/icons/add.svg') no-repeat center center;
+    width: 16px;
+    height: 16px;
+    transition: .3s;
+}
+
+.product-detail .button:hover::after{
+    transform: rotate(180deg);
+}
+
+
+
+.product-detail .button.disabled {
+    opacity: .5;
+    cursor: initial;
+}
+
+.product-detail .variations tr {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.product-detail select {
+    font-size: 1rem;
+}
+
+.product-detail .reset_variations {
+    display: none !important;
+}
+
+.product-detail .stock {
+    display: none !important;
+}
+
+.quantity  {
+    padding: 20px 0;
+}
+
+
+
+
+@media(max-width: 800px) {
+    .product-detail h1 {
+        margin-bottom:20px ;
+    }
+}
+
+.notices {
+    margin: 20px auto;
+}
+
+.calculo-de-frete input {
+    height: 25px !important;
+    font-size: 1.125rem !important;
+    font-weight: normal;
+    text-transform: capitalize;
+
+    
+}
+
+.calculo-de-frete div#calcular-frete {
+    background: #000000 !important;
+    height: 50px !important;
+    margin-bottom:0 !important;
+    margin-top: 20px;
+}
+
+.resultado-frete {
+    background-color: #f8f8f8;
+}
+
+.calculo-de-frete #calcular-frete-loader {
+    border: 5px solid #000000 !important;
+    border-top: 5px solid gray !important;
+    width: 20px !important;
+    height: 20px !important;
+}
+
+
+
+
+
